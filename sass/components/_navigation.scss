@@ -1,0 +1,99 @@
+.navigation {
+    // display: inline-block;
+    display: block;
+    height: auto;
+    top: 0;
+    z-index: 5;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-weight: 550;
+    transition: all .3s ease-out;
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    &_sticky {
+        background-color: $color-white;
+        z-index: 100;
+        @include box-shadow-smaller;
+        position: fixed;
+        font-size: 1.7rem;
+        padding: 2rem 0;
+
+        .navigation_logo {
+            margin-top: .05rem;
+            margin-left: 2rem;
+            border-radius: 1.4rem;
+            width: 9rem;
+            height: 3.4rem;
+            background-image: url(../img/navigation-logo-2.png);
+        }
+
+        .navigation_list {
+            margin: .5rem 3rem 0 0;
+        }
+        .navigation_link {
+            text-shadow: none;
+            color: $color-primary-dark;
+
+            &::after {
+                background-color: $color-primary-dark;
+            }
+        }
+       
+    }
+
+    &_logo {
+        display: inline-block;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        width: 10rem;
+        height: 3.3rem;
+        background-image: url(../img/navigation-logo.png);
+        background-position: center;
+        background-size: cover;
+    }
+ 
+
+    &_list {
+        list-style: none;
+        float: right;
+        margin: 3rem 3rem 0 0;
+    }
+
+    &_item {
+        display: inline-block;
+        text-align: center;
+        margin-right: 1.5rem;
+    }
+
+    &_link {
+        text-decoration: none;
+        padding: 1rem 0;
+        color: $color-white;
+        letter-spacing: .2rem;
+        position: relative;
+        @include text-shadow-big;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0;
+            background-color: $color-white;
+            transition: width .3s;
+        }   
+
+        &:hover  {
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+
+}
+
