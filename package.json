@@ -1,0 +1,17 @@
+{
+  "name": "spiti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^8.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,54 @@
+@mixin block-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin text-shadow-small {
+    text-shadow: 0 1rem 2rem rgba($color-black,.3);
+}
+
+@mixin box-shadow-small {
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.4);
+}
+
+@mixin box-shadow-smaller {
+    box-shadow: 0 1rem 3rem rgba($color-black,.2);
+}
+
+@mixin box-shadow-big {
+    box-shadow: 0 2rem 4rem rgba($color-black,.5);
+}
+
+@mixin text-shadow-big {
+    text-shadow: 0 2rem 5rem rgba($color-black,.9);
+}
+
+@mixin  respond($breakpoint) {
+
+    @if  $breakpoint == tab-land {
+        @media (max-width: 75em){ @content }; // 1200px
+    }
+
+    @if  $breakpoint == tab-port {
+        @media (max-width: 56.25em){ @content }; // 900px
+    }
+
+    @if  $breakpoint == phone {
+        @media (max-width: 37.5em){ @content }; // 600 px
+    }
+
+    @if  $breakpoint == big-desktop {
+        @media (min-width: 112.5em){ @content }; // 1800px
+    }
+    
+}

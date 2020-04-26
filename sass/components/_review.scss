@@ -1,0 +1,111 @@
+.review{
+    position: relative;
+    height: 50rem;
+    -moz-perspective: 150rem;
+    perspective: 150rem;
+
+    &_card {
+        backface-visibility: hidden;
+        @include box-shadow-small;
+        height:  50rem;
+        border-radius: 3px;
+        overflow: hidden;
+        width: 100%;
+        transition: transform 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include respond(tab-port) {
+            .review-text {
+                margin-top: 6rem;
+            }
+        }
+
+        
+        &-front {
+            background-image: linear-gradient(180deg, $color-primary 35%,transparent 21%,$color-gray-light-1 70%);
+        }
+    
+        &-back {
+            transform: rotateY(180deg);
+            
+            &-1 {
+                background-image: url(../img/shell-6.jpg);
+                background-size: cover;
+            background-position: center;
+            }
+            &-2 {
+                background-image: url(../img/shell-1.jpg);
+                background-size: cover;
+            background-position: center;
+            }
+
+            &-3 {
+                background-image: url(../img/shell-2.jpg);
+                background-size: cover;
+            background-position: center;
+            }
+
+        }
+    }
+
+    &:hover &_card-front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &_card-back {
+        transform: rotateY(0);
+    }
+
+
+}
+
+.profile {
+    text-align: center;
+
+    &-picture {
+        display: block;
+        background-color: white;
+        height: 10rem;
+        width: 10rem;
+        margin: 2rem auto 0;
+        border-radius: 50%;
+        background-size: cover;
+
+        &-1 {
+            background-image: url(../img/man-1.jpg);
+        }
+
+        &-2 {
+            background-image: url(../img/woman-1.jpg);
+        }
+
+        &-3 {
+            background-image: url(../img/woman-2.jpg);
+        }
+    }
+
+    &-name {
+        font-size: 3rem;        
+        color: $color-white;
+    }
+
+}
+
+.rating {
+    text-align: center;
+    display: block;
+    @include block-center;
+    color: $color-white;
+
+    &_heading {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &_number {
+        font-size: 3.5rem;
+
+    }
+}

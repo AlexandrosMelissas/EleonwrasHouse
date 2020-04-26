@@ -1,0 +1,112 @@
+.about_image {
+   width: 55%;
+   position: absolute;
+   @include box-shadow-small;
+   border-radius: 5px;
+   transition: transform .4s;
+   cursor: pointer;
+   
+   @media (max-width: 62.5em) {
+       width: 45%;
+   }
+
+   @include respond(phone) {
+       width: 35%;
+   }
+
+    &-container {
+        position: relative;
+
+        &:hover .about_image:not(:hover){
+            transform:  scale(0.9);
+            @include respond(tab-land) {
+                transform: scale(0.95);
+    
+            }
+        }
+    }
+
+    &-1 {
+        top: 16rem;
+        left: 8rem;
+        z-index: 1;
+
+        @media (max-width: 62.5em) {
+            top: 18rem;
+            left: 12.5rem;
+        }
+
+        @media (max-width: 65.62em) {
+            top: 10rem;
+            left: 16rem;
+        }
+
+        @include respond(phone) {
+           top: 2rem;
+           left: 17rem;
+        }
+
+        
+        @media (max-width: 25em) {
+            left: 13rem;
+        }
+
+        
+    }
+
+    &-2 {
+        top: 0;
+
+        @media (max-width: 62.5em) {
+            top: 12rem;
+        }
+
+        @media (max-width: 65.62em) {
+            top: 6rem;
+            left: -8rem;
+        }
+
+        @include respond(phone) {
+            left: 0;
+        }
+
+        @media (max-width: 25em) {
+            left: 3rem;
+        }
+    }
+
+    &-3 {
+        top: 2rem;
+        left: 25rem;
+
+        @media (max-width: 62.5em) {
+            top: 12rem;
+
+        }
+
+        @media (max-width: 65.62em) {
+            top: 6rem;
+            left: 40rem;
+        }
+
+        @include respond(phone) {
+            left: 35rem;
+        }
+
+        @media (max-width: 25em) {
+            left: 25rem;
+        }
+
+    }
+
+    &:hover {
+        @include box-shadow-big;
+        transform: scale(1.3) translateY(-1rem);
+        z-index: 2;
+
+        @include respond(tab-land) {
+            transform: scale(1.05) translateY(-1rem);
+
+        }
+    }
+}
