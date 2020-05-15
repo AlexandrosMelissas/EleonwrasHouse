@@ -11,4 +11,4 @@ http://www.eleonwrashouse.com
 4. Firebase Functions (for contact) and Firebase Database (backend)
 5. Wavify plugin for SVG wave animation
 
-# Created and Deisnged by Alex Melissas
+# Created and Designed by Alex Melissas
