@@ -1,0 +1,34 @@
+.amenities {
+
+    &-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include respond(tab-port) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+        column-gap: 2rem;
+        grid-template-rows: auto;
+        row-gap: 2rem;
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: .7rem;
+        align-items: center;
+        transition: all .3s ease;
+        &_listing {
+            font-size: 1.5rem;
+            }
+
+        &:hover {
+            @include box-shadow-smaller;
+            transform: translateY(-10%);
+        }
+    }
+}

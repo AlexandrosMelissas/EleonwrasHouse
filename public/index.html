@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleonwra's House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+        integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
+    <script src="js/wavify.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <nav class="navigation">
+            <span class="navigation_logo"></span>
+            <ul class="navigation_list">
+                <li class="navigation_item"><a href="#home" class="navigation_link">Home</a></li>
+                <li class="navigation_item"><a href="#about" class="navigation_link">About</a></li>
+                <li class="navigation_item"><a href="#gallery" class="navigation_link">Gallery</a></li>
+                <li class="navigation_item"><a href="#amenities" class="navigation_link">Amenities</a></li>
+                <li class="navigation_item"><a href="#reviews" class="navigation_link">Reviews</a></li>
+                <li class="navigation_item"><a href="#contact" class="navigation_link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="navigation-phone">
+            <input type="checkbox" class="navigation-phone_input" id="check">
+            <label class="navigation-phone_white-circle" for="check">
+                <span class="navigation-phone_icon">&nbsp;</span>
+            </label>
+            <div class="navigation-phone_background"></div>
+
+            <nav class="navigation-phone_nav">
+                <ul class="navigation-phone_list">
+                    <li class="navigation-phone_item"><a href="#home" class="navigation-phone_link">Home</a></li>
+                    <li class="navigation-phone_item"><a href="#about" class="navigation-phone_link">About</a></li>
+                    <li class="navigation-phone_item"><a href="#gallery" class="navigation-phone_link">Gallery</a></li>
+                    <li class="navigation-phone_item"><a href="#amenities" class="navigation-phone_link">Amenities</a>
+                    </li>
+                    <li class="navigation-phone_item"><a href="#reviews" class="navigation-phone_link">Reviews</a></li>
+                    <li class="navigation-phone_item"><a href="#contact" class="navigation-phone_link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header_text-box">
+            <h1 class="heading_primary">
+                <span class="heading_primary-main">Eleonwra's</span>
+                <span class="heading_primary-sub">House</span>
+            </h1>
+            <a href="#contact" class="btn btn_animated btn-white">Book Now</a>
+        </div>
+        <svg class="header_svg" width="100%" height="20%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs></defs>
+            <path id="wave-svg" d="" />
+        </svg>
+    </header>
+    <main>
+        <section class="section-about" id="about">
+            <div class="u-text-center">
+                <h1 class="heading_secondary heading_secondary-blue">About the house</h1>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h2 class="heading_tertiary">Just a few meters away from the sea</h2>
+                    <p class="paragraph">Our house is just 3 meters away from the sea! Take your kids and go swimming
+                        without any hassle! No need to carry anything with you. Convenience at it's best!</p>
+
+                    <h2 class="heading_tertiary">One of the most isolated beaches</h2>
+                    <p class="paragraph">Enjoy your vacation with absolute privacy! Our house is located 1 km away from
+                        the centre where there are crowded beaches and hotels with sunbeds!</p>
+
+                    <a class="btn btn-text" target="_blank"
+                        href="https://www.google.com/maps/place/ELEONWRAS+HOUSE/@40.2712796,23.4350856,17z/data=!3m1!4b1!4m8!3m7!1s0x14a889f256c35b17:0x5b32d6d47f018eee!5m2!4m1!1i2!8m2!3d40.2712796!4d23.4372743">
+                        Check location &rightarrow;
+                    </a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="about_image-container">
+                        <img class="about_image about_image-1" src="img/about-image.jpg"
+                            alt="Halkidiki gerakini seawater">
+                        <img class="about_image about_image-2" src="img/about-image-2.jpg"
+                            alt="Eleonwra's House beach in front of the sea">
+                        <img class="about_image about_image-3" src="img/about-image-3.jpg"
+                            alt="Gerakini halkidiki beach">
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="section-about-wave" viewBox="0 0 1440 320">
+                <path fill="#8EC0E4" fill-opacity="1"
+                    d="M0,32L30,69.3C60,107,120,181,180,208C240,235,300,213,360,181.3C420,149,480,107,540,117.3C600,128,660,192,720,224C780,256,840,256,900,240C960,224,1020,192,1080,160C1140,128,1200,96,1260,85.3C1320,75,1380,85,1410,90.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+        <section class="section-gallery" id="gallery">
+            <div class="u-text-center">
+                <h2 class="heading_secondary heading_secondary-white">Photo Gallery</h2>
+            </div>
+            <div class="gallery">
+                <a data-source="img/gallery-1.jpg" title="Bottle in front of Gerakini Beach"
+                    class="gallery_img gallery_img-1">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-2.jpg" class="gallery_img gallery_img-2"
+                    title="Beautiful garden of Eleonwra's House">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-3.jpg" class="gallery_img gallery_img-3"
+                    title="Eleonwra's house umbrella in front of the sea">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-4.jpg" class="gallery_img gallery_img-4"
+                    title="Balcony view of Eleonwra's House">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-5.jpg" class="gallery_img gallery_img-5"
+                    title="Kitchen of Eleonwra's House">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-6.jpg" class="gallery_img gallery_img-6"
+                    title="Eleonwra's House bedroom with fireplace and bathroom">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-7.jpg" class="gallery_img gallery_img-7"
+                    title="Eleonwra's House canoo in front of the sea">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-8.jpg" class="gallery_img gallery_img-8"
+                    title="Eleonwra's House second floor">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-9.jpg" class="gallery_img gallery_img-9" title="Eleonwra's House bedroom">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-10.jpg" class="gallery_img gallery_img-10" title="Eleonwra's House bedroom">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-11.jpg" class="gallery_img gallery_img-11"
+                    title="Eleonwra's House garden and front yard">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a data-source="img/gallery-12.jpg" class="gallery_img gallery_img-12"
+                    title="Eleonwra's House living room">
+                    <ion-icon name="expand-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="modal">
+                <span class="modal_close">&times;</span>
+                <div class="modal_carousel">
+                    <ion-icon class="carousel_button carousel_button-previous" name="arrow-back-circle-outline">
+                    </ion-icon>
+                    <ion-icon class="carousel_button carousel_button-next" name="arrow-forward-circle-outline">
+                    </ion-icon>
+                    <h2 class="carousel_counter"></h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-amenities" id="amenities">
+            <div class="u-text-center">
+                <h2 class="heading_secondary heading_secondary-blue">Amenities</h2>
+            </div>
+            <div class="amenities-container">
+                <div class="amenities-box amenities-bathroom">
+                    <h2 class="heading_tertiary">Bathroom</h2>
+                    <span class="amenities-box_listing">
+                        <ion-icon style="margin-top: .2rem;" name="water-outline"></ion-icon>
+                        Hot Water
+                    </span>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            air
+                        </span>Hair Dryer</span>
+                </div>
+                <div class="amenities-box amenities-bedroom_and_laundry">
+                    <h2 class="heading_tertiary">Bedroom and laundry</h2>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            iron
+                        </span>Iron</span>
+
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            local_laundry_service
+                        </span>Dish washer</span>
+                </div>
+                <div class="amenities-box amenities-kitchen">
+                    <h2 class="heading_tertiary">Kitchen</h2>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            coffee_maker
+                        </span>Coffee Maker</span>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            kitchen
+                        </span>Refrigerator</span>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            lunch_dining
+                        </span>Sandwitch Maker</span>
+                </div>
+                <div class="amenities-box amenities-outdoor">
+                    <h2 class="heading_tertiary">Garden</h2>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            outdoor_grill
+                        </span>Barbeque Grill</span>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            shower
+                        </span>Shower in the garden</span>
+
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            yard
+                        </span>Fresh vegetables from our garden</span>
+                </div>
+                <div class="amenities-box amenities-heating_and_cooling">
+                    <h2 class="heading_tertiary">Heating and cooling</h2>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            toys
+                        </span>Ceiling fan</span>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            ac_unit
+                        </span>Air Conditioning</span>
+                </div>
+                <div class="amenities-box amenities-sea">
+                    <h2 class="heading_tertiary">Sea</h2>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            rowing
+                        </span>Sea Canoe</span>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            bed
+                        </span>Sunbeds for the beach</span>
+                    <span class="amenities-box_listing"><span
+                            style="vertical-align: middle;margin-bottom: .2rem;margin-right: .5rem;"
+                            class="material-icons">
+                            beach_access
+                        </span>Palm Tree Umbrellas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-reviews" id="reviews">
+            <div class="u-text-center">
+                <h2 class="heading_secondary heading_secondary-blue">Reviews</h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="review">
+                        <div class="review_card review_card-front">
+                            <div class="profile">
+                                <span class="profile-picture profile-picture-1">&nbsp;</span>
+                                <h2 class="profile-name">John Doe</h2>
+                            </div>
+                            <div class="review-text">
+                                <div class="u-text-center padding-small margin-top-small">
+                                    <h2 class="review_heading heading_tertiary">We had a wonderfull time!</h2>
+                                    <p class="paragraph u-text-align-left">
+                                        Me and our family spent an unforgettable week with Katerina and Andreas.
+                                        Amazing, quite place with warmest possible hosts, you can ever meet!
+                                        We will definetely come back again. Thanks a lot, Katerina and Andreas!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_card review_card-back review_card-back-1">
+                            <div class="rating">
+                                <h2 class="rating_heading">August 2018</h2>
+                                <span class="rating_number">Airbnb Rating 10/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="review">
+                        <div class="review_card review_card-front">
+                            <div class="profile">
+                                <span class="profile-picture profile-picture-2">&nbsp;</span>
+                                <h2 class="profile-name">Teodora</h2>
+                            </div>
+                            <div class="review-text">
+                                <div class="u-text-center padding-small margin-top-small">
+                                    <h2 class="review_heading heading_tertiary">Perfect Place!</h2>
+                                    <p class="paragraph u-text-align-left"> We spent 9 nights at Andrea's and Katerina's
+                                        house and truly loved it!
+                                        They are the most wonderful people - kind, helpful and welcoming.
+                                        The house is quite isolated,
+                                        so you can enjoy in your privacy.
+                                        The house is perfect for families with children
+                                        but also for all those who appreciate peace and quietness.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_card review_card-back  review_card-back-2">
+                            <div class="rating">
+                                <h2 class="rating_heading">August 2018</h2>
+                                <span class="rating_number">Airbnb Rating 10/10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1-of-3">
+                    <div class="review">
+                        <div class="review_card  review_card-front">
+                            <div class="profile">
+                                <span class="profile-picture profile-picture-3">&nbsp;</span>
+                                <h2 class="profile-name">Moshe</h2>
+                            </div>
+                            <div class="review-text">
+                                <div class="u-text-center padding-small margin-top-small">
+                                    <h2 class="review_heading heading_tertiary">The house is amazing!</h2>
+                                    <p class="paragraph u-text-align-left">
+                                        Just on the beach with everything you need.
+                                        The beach is really more private than public.
+                                        Katerina and Andreas are the best hosts we have ever met.
+                                        So nice and generous. They helped us with everything we needed.
+                                        We had a great time and and it's a pitty that we only stayed for two nights.
+                                        We'll come back for sure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_card review_card-back review_card-back-3">
+                            <div class="rating">
+                                <h2 class="rating_heading">July 2019</h2>
+                                <span class="rating_number">Airbnb Rating 10/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact" id="contact">
+            <div class="bg-video">
+                <video class="bg-video_content" autoplay muted loop>
+                    <source class="bg-video_source" src="img/review-video.mp4" type="video/mp4">
+                    </source>
+                    Your web browser is not supported!
+                </video>
+            </div>
+            <div class="contact_box">
+                <div class="u-text-center">
+                    <h2 class="form_heading">Contact Us</h2>
+                </div>
+                <form class="form">
+                    <div class="row margin-bottom-small">
+                        <div class="col-1-of-2">
+                            <div class="form_group">
+                                <input type="text" class="form_input" id="name" placeholder="Full Name" required>
+                                <label class="form_label" for="name">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col-1-of-2">
+                            <div class="form_group">
+                                <input type="email" class="form_input" id="email" placeholder="Email Address" required>
+                                <label class="form_label" for="email">Email Address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <textarea class="form_textarea" id="message" placeholder="Your message" required></textarea>
+                        <button type="submit" class="btn btn-white margin-top-small">Send Message</button>
+                    </div>
+            </div>
+            </form>
+            </div>
+            <div class="modal_verify">
+                <h2 class="verify_message"></h2>
+                <a class="btn verify_btn btn-text">OK</a>
+                &nbsp;
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <img src="./img/footer-logo-2.png" alt="" class="footer_logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2 ">
+                <div class="footer_info">
+                    <span>Email Address: eleonwrashouse@gmail.com</span>
+                    <br>
+                    <span>Phone Number: +30 6982090194</span>
+                </div>
+            </div>
+            <div class="col-1-of-2 footer_text">
+                <p>All profile photos used in the review section are taken from the web.
+                    Real photos of the people who made the reviews could not be implemented due to legal issues.
+                    The video in the background of the contact section doesn't depict the actual location of the house.
+                </p>
+            </div>
+        </div>
+        <div class="row u-text-center footer_copyright">
+            <span>Created by Alex Melissas &copy;<span>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAf9FFRIJy284M12u3bDFHvILDRBMncwcM",
+            authDomain: "eleonwra-s-house.firebaseapp.com",
+            databaseURL: "https://eleonwra-s-house.firebaseio.com",
+            projectId: "eleonwra-s-house",
+            storageBucket: "eleonwra-s-house.appspot.com",
+            messagingSenderId: "525102672996",
+            appId: "1:525102672996:web:41ec90ee7b65b46b5b8371"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
