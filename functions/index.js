@@ -24,7 +24,7 @@ exports.contactform = functions.firestore.document('contact/{contactId}').onCrea
     });
 
     const mailOptions = {
-        from: functions.config().contact.email,
+        from: contact.email,
         to: 'eleonwrashouse@gmail.com',
         subject: 'New message from Eleonwras house',
         text: `
@@ -35,7 +35,6 @@ exports.contactform = functions.firestore.document('contact/{contactId}').onCrea
         `
     };
 
-    console.log('hello')
     transporter.sendMail(mailOptions).catch(e => { console.log(e) })
 
 })
